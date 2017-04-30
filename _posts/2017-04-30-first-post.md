@@ -10,5 +10,6 @@ Jekyll uses Markdown syntax, here's a [cheatsheet](https://github.com/adam-p/mar
 
 Things on the to-do list with this site, now it's up:
 * Add a jekyll [theme](https://jekyllthemes.io/)
+* Set up jekyll locally to test changes without committing to github every 5 minutes!
 * Add an image (it's still early days)
 * Add some more blog posts, obviously!
