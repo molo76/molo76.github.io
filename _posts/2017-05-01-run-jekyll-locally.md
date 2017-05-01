@@ -65,7 +65,7 @@ Untracked files:
 
 	_posts/2017-05-01-run-jekyll-locally.md
 ```
-I now run 'git add' on those files to stage them ready for commit, and checking the 'git status' again shows this:
+I now run 'git add' on those files to stage them ready for commit, and checking the 'git status' again confirms the changes will be commited:
 ```
 $ git add about/index.html
 $ git add index.html
@@ -79,3 +79,72 @@ Changes to be committed:
 	modified:   about/index.html
 	modified:   index.html
 ```
+Now to commit them:
+```
+$ git commit -m "altered index.html, about page, added blog post"
+[run_jekyll_locally f05b681] altered index.html, about page, added blog post
+ 3 files changed, 52 insertions(+), 2 deletions(-)
+ create mode 100644 _posts/2017-05-01-run-jekyll-locally.md
+```
+Finally, push the changes that have been committed locally to github:
+```
+$ git push origin run_jekyll_locally
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (11/11), 2.00 KiB | 0 bytes/s, done.
+Total 11 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 3 local objects.
+To github.com:molo76/molo76.github.io.git
+ * [new branch]      run_jekyll_locally -> run_jekyll_locally
+```
+This creates a new branch on github itself (earlier I just created the branch locally). Looking at the repository on the github website shows the branch. Finally when all is done it's time to merge the branch into the 'master' repository, so the changes will be served on the site on github-pages.
+
+To do this, checkout the 'master' branch, and merge the 'run_jekyll_locally' branch:
+```
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+$ git merge run_jekyll_locally
+Updating 49f9a9b..80cb1d3
+Fast-forward
+ _posts/2017-05-01-run-jekyll-locally.md | 81 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ about/index.html                        |  2 +-
+ index.html                              |  2 +-
+ 3 files changed, 83 insertions(+), 2 deletions(-)
+ create mode 100644 _posts/2017-05-01-run-jekyll-locally.md
+```
+After checking the status one last time a final push will send all the changes made up to the 'master' branch.
+
+```
+[martyn@dubtower molo76.github.io]$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+$ git push
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:molo76/molo76.github.io.git
+   49f9a9b..80cb1d3  master -> master
+```
+At first I thought this had failed, as the push command showed `Total 0 (delta 0), reused 0 (delta 0)`. But the site had updated, meaning the merge worked and final push worked.
+
+To recap my steps in this blog post, I did the following:
+* Installed Jekyll locally
+* Created a branch of the 'master' repository locally on my laptop
+* Started Jekyll to 'build' and 'serve' the site locally
+* Added a new blog post
+* Commited changes, and pushed new branch to github
+* Merged the branch into the 'master' repository
+* Pushed the master back to github
+
+That's alot of stuff, and github can be complicated for a newbie such as myself, having no previous knowledge of version control systems. I'm going to go through this process a few more times to let it sink in properly!
+
+A thank you to [dont-be-afraid-to-commit](http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html) which has a good one page starter guide for github on the command line.
