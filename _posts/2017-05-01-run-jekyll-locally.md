@@ -48,3 +48,34 @@ Configuration file: /home/martyn/Documents/Devel/molo76.github.io/_config.yml
     Server address: http://127.0.0.1:4000/
 ```
 It worked! Great, so I now created this blog page, and saved it. Checked out http://localhost:4000/blog/ and there it is. I'm now editing the site on a seperate local version.
+
+Checking 'git status' again shows that I have edited a couple of files (correcting typo's errors) that are already in the repository and also created a new file, this blog post:
+```
+$ git status
+On branch run_jekyll_locally
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   about/index.html
+	modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	_posts/2017-05-01-run-jekyll-locally.md
+```
+I now run 'git add' on those files to stage them ready for commit, and checking the 'git status' again shows this:
+```
+$ git add about/index.html
+$ git add index.html
+$ git add _posts/2017-05-01-run-jekyll-locally.md
+$ git status
+On branch run_jekyll_locally
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   _posts/2017-05-01-run-jekyll-locally.md
+	modified:   about/index.html
+	modified:   index.html
+```
