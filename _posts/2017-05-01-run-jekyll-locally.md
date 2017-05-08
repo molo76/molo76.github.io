@@ -5,7 +5,7 @@ date: 2017-04-30
 ---
 Rather than editing this site directly on github through the web front end, I have been using command-line git to clone the repository to my laptop, edit files, then commit and push back to github. It works well but every small edit requires a push into the repository to see the results, good or bad. It becomes a bit time consuming, but does up your github commit stats!
 
-So I wanted to run Jekyll locally on my Fedora 25 install, so I can make changes to the website and check they work first, before pushing to the 'master' repository on github. To do this requires installing Jekyll and some dependencies:
+I wanted to run Jekyll locally on my Fedora 25 install, so I can make changes to the website and check they work first, before pushing to the 'master' repository on github. To do this requires installing Jekyll and some dependencies:
 ```
 $ sudo dnf install ruby-devel  
 $ sudo dnf install redhat-rpm-config
