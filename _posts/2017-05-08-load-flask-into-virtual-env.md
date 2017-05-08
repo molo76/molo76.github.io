@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Load Flask into a Python Virtual Environment"
-date: 2017-04-30
+date: 2017-05-08
 ---
 Following this tutorial [here](https://scotch.io/tutorials/build-a-crud-web-app-with-python-and-flask-part-one) by Mbithe Nzomo, here's the commands to quickly install virtualenv, virtualenvwrapper and then install Flask and it's dependancies into a virtualenv.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Run Jekyll locally, and a load of git"
-date: 2017-04-30
+date: 2017-05-01
 ---
 Rather than editing this site directly on github through the web front end, I have been using command-line git to clone the repository to my laptop, edit files, then commit and push back to github. It works well but every small edit requires a push into the repository to see the results, good or bad. It becomes a bit time consuming, but does up your github commit stats!
 
