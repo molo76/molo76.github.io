@@ -24,6 +24,6 @@ A quick google search threw up the following command to check where the tmpdir i
 ```
 I had already checked `/var/tmp` - nothing there. 
 
-Finally found the files in ```/var/lib/mysql/my_database1``` the main DB directory that contains the data files for each table.
+I finally found the files in ```/var/lib/mysql/my_database1``` the main DB directory that contains the data files for each table!
 
 This was MariaDB 10.1.21-3, running on Fedora 25. 
