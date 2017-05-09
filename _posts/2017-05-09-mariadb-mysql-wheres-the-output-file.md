@@ -3,7 +3,7 @@ layout: post
 title: "Missing MySQL / MariaDB output files"
 date: 2017-05-09
 ---
-If you ever want to output something from a MySQL database, a query you've cooked up that someone wants in a CSV spreadsheet, Here's the SQL command to get the data out into a file. 
+If you ever want to output something from a MySQL database into a file, a query you've cooked up that someone wants in a CSV spreadsheet, here is the SQL command to do that: 
 ```
 SELECT Your_Column_Name
  FROM Your_Table_Name
