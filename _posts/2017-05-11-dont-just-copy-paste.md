@@ -7,7 +7,7 @@ I'm still going through this tutorial [here](https://scotch.io/tutorials/build-a
 
 But I noticed that there really is a massive amount of code in this tutorial, lots of big Python & HTML files, and it's very tempting to just copy and paste from the tutorial straight into a file in the project. But doing so doesn't really teach you anything.
 
-I have taken the approach to write out each file by hand, this helps in getting the reason behind the code into your head. As I am typing out each method or class I am thinking about what part the line of code plays in the finished app, and often when I try and run the end result in Flask locally I get an error which forces me to look back and find the erroneous syntax that is causing the error. It is a good way to learn how to debug code. If I copied and pasted each file into the repo and hit run, the tutorial would be over in a couple of hours. So far I have spent several evenings on it, and I'm learning more as a result.
+I have taken the approach to write out each file by hand, this helps in getting the reason behind the code into your head. As I am typing out each method or class I am thinking about what part the line of code plays in the finished app. And often when I try and run the end result in Flask locally I get an error which forces me to look back and find the erroneous syntax that is causing the error. It is a good way to learn how to debug code. If I just copied and pasted each chunk of code from the tutorial into a file in my [github repo](https://github.com/molo76/project_dream_team) and hit run, the tutorial would be over in a couple of hours. So far I have spent several evenings on it, and I'm learning more as a result.
 
 Take the following for instance, I could have copied and pasted the whole of this code chunk from the tutorial into the relevant file in my [repo](https://github.com/molo76/project_dream_team), but would I have actually learned anything by doing so? By typing it all out by hand I feel I am actually learning the code and making the whole process of following the tutorial worthwhile.
 
@@ -91,4 +91,4 @@ def logout():
     return redirect(url_for('auth.login'))
 ```
 
-I think that looks pretty good. I haven't taken to writing out the html files in the tutorial by hand, since I already know basic html, and I want to focus and crack on with the Python stuff. 
+I think that looks pretty good. I haven't taken to writing out the html files in the tutorial by hand, since I already know basic html, and I want to focus and crack on with the Python stuff.
