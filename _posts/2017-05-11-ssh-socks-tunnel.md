@@ -9,6 +9,7 @@ To browse the internet via an AWS server, of any other remote server running ssh
 ssh -D 8123 -f -C -q -N user@ssh-server-ip
 ```
 Of course, the target server has to be able to access the internet. The command arguments used above are: 
+
   *```-D```: Tells SSH that we want a SOCKS tunnel on the specified port number (you can choose a number between 1025-65536)
   *```-f```: Forks the process to the background
   *```-C```: Compresses the data before sending it
