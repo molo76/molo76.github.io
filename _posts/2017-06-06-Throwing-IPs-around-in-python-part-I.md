@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Throwing some IPs around in Python"
+title: "Throwing some IPs around in Python Part I"
 date: 2017-06-06
 ---
 I started to mess around with some IP addresses in Python, and I wanted to create a simple subnet-calculator where the user enters an IP and CIDR mask, '10.208.20.1/25' and the program outputs the following information: 
