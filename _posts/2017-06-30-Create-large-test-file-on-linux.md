@@ -14,4 +14,4 @@ I found the following 'fallocate' command, and it's super quick to create a larg
 <p>
 ```fallocate -l 10G gentoo_root.img```
 
-Thank you StackOverflow my friend: https://stackoverflow.com/questions/257844/quickly-create-a-large-file-on-a-linux-system
+Thank you StackOverflow my friend, I found this nugget <a href='https://stackoverflow.com/questions/257844/quickly-create-a-large-file-on-a-linux-system'>here</a>.
