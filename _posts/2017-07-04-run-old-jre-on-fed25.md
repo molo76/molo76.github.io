@@ -22,5 +22,6 @@ jdkhome="/usr/lib/jvm/jre-1.6.0-openjdk.x86_64"
 
 And now Thinking Rock runs! I put this post up, as I have several Fedora installs I may want to run it on, so will probably visit this page again myself soon. :) 
 
-Here's a screenshot (which also allows me to test adding images to a Jeykll blog hosted on Github. 
-![screenshot]({{ site.url }}/assets/thinking.png)
+Here's a screenshot:
+![thinking]({{ site.url }}/assets/thinking.png)
+This screenshot also allows me to test adding images to a Jeykll blog hosted on Github. Simply create an 'assets' folder, then put the following markdown into a page: ```![thinking]({{ site.url }}/assets/thinking.png)```
