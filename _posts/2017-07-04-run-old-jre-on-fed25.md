@@ -13,12 +13,14 @@ It failed to run on Fedora 25, no error, just splash screen then nothing. Then I
 sudo dnf install java-1.6.0-openjdk --releasever=16 --nogpgcheck
 ```
 
+
 Then I edited the ```ThinkingRock/tr-2.2.1/etc/tr.conf``` file, adding in the jdkhome location of java 1.6
 
 ```
 ### Default location of Java JDK/JRE, can be overridden by using --jdkhome <dir> switch ###
 jdkhome="/usr/lib/jvm/jre-1.6.0-openjdk.x86_64"
 ```
+
 
 And now Thinking Rock runs! I put this post up, as I have several Fedora installs I may want to run it on, so will probably visit this page again myself soon. :) 
 
