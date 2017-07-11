@@ -3,7 +3,9 @@ layout: post
 title: "Run an old JRE on Fedora 25"
 date: 2017-07-04
 ---
-Back in 2013 I did a firewall migration & LAN upgrade project for a site I worked at. I pretty much did the whole thing myself and found that I needed some sort of 'project software' to help me. I found this great app called <a href='https://sourceforge.net/projects/thinkingrock/?source=navbar'>Thinking Rock</a> and it really helped me get my tasks and project in order. The bonus that being a java app it runs on Linux too. 
+Back in 2013 I did a firewall migration & LAN upgrade project for a site I worked at. I ran the project, procurement, HLD, LLD and implementation and found that I needed some sort of 'project software' to help me keep track of all the tasks. I wanted it to run on Linux if possible, and to not be MS Project. 
+
+I found this great app called <a href='https://sourceforge.net/projects/thinkingrock/?source=navbar'>Thinking Rock</a> and it really helped me get my tasks and project in order. The bonus that being a java app it runs on Linux too. 
 
 Now I'm back doing some project work I looked for it again. There is a new version, <a href='https://www.trgtd.com.au/'>3.1</a>, that has some nice bells and whistles, but it's $39. I found version 2.2.1 hosted on <a href='https://sourceforge.net/projects/thinkingrock/?source=navbar'>SourceForge</a> did everything I needed, so I went and grabbed it again. 
 
