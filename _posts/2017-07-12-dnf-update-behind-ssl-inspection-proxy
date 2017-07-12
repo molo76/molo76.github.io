@@ -1,0 +1,32 @@
+---
+layout: post
+title: "Redhat / CentOS / Fedora dnf update from behind SSL inspection proxy"
+date: 2017-07-04
+---
+I am doing some testing with cloud based secure web access gateway solutions, and while testing with SSL inspection turned on I noticed that from a Fedora box behind the Zscaler cloud I could no longer do a 'dnf update'. The Curl error (60) below is the fatal error, mentioning 'Peers Certificate issue is not recognized'.
+
+'''
+Install   8 Packages
+Upgrade  85 Packages
+Remove    5 Packages
+
+Total download size: 303 M
+Is this ok [y/N]: y
+Downloading Packages:
+
+The downloaded packages were saved in cache until the next successful transaction.
+You can remove cached packages by executing 'dnf clean packages'.
+Error: Error downloading packages:
+  Curl error (60): Peer certificate cannot be authenticated with given CA certificates for https://mirrors.rpmfusion.org/metalink?repo=free-fedora-updates-released-25&arch=x86_64 [Peer's Certificate issuer is not recognized.]
+'''
+
+So there's something I didn't know, dnf uses curl. There are curl arguments you can use to allow the use of unrecognized certificates, but that is not going help dnf. I looked at dnf arguments but came to conclusion that there should be a more permanent solution. 
+
+The point of SSL inspection, done by a proxy or firewall, is that it is a 'man in the middle'. whereby the proxy or firewall in the middle presents its own certificate to the client, rather than the 
+
+/etc/pki/ca-trust/source/anchors/
+
+update-ca-trust 
+
+edit /etc/dnf/dnf.conf and add sslverify=0
+
