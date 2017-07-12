@@ -26,7 +26,7 @@ The point of SSL inspection, done by a proxy or firewall, is that it is essentia
 
 For this to work transparently to end users, the certificate from the 'device in the middle' needs to be installed as a trusted certificate on the client device, otherewise the browser will flag that the certificate presented does not match the intended destination sites credentials. I had already installed the proxies certificate as a trusted certificate in my Fedora build by using [Kleopatra](https://www.kde.org/applications/utilities/kleopatra/), however dnf was still giving me the curl error 60 issue. 
 
-I found a quick hack which suggested that adding the line ```sslverify=0``` to ```/etc/dnf/dnf.conf``` will fix the issue. From a security point of view that doesn't sit well with me, as it essentially means that it will accept any certificate from any source. The better solution is to add the proxies certificate, in PEM format, to the ```/etc/pki/ca-trust/source/anchors/``` folder and then run the ```sudo update-ca-trust```. 
+I found a quick hack which suggested that adding the line ```sslverify=0``` to ```/etc/dnf/dnf.conf``` will fix the issue. From a security point of view that doesn't sit well with me, as it essentially means that dnf will accept any certificate from any source. The better solution is to add the proxies certificate, in PEM format, to the ```/etc/pki/ca-trust/source/anchors/``` folder and then run the ```sudo update-ca-trust```. 
 
 And there we go, dnf now works through an upstream device that is doing ssl inspection. The same probably applies to the older yum update process, and it looks like I'll need to check with apt based distributions to test that out too, since alot of our dev users are Ubuntu based. 
 
