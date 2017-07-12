@@ -5,7 +5,7 @@ date: 2017-07-04
 ---
 I am doing some testing with cloud based secure web access gateway solutions, and while testing with SSL inspection turned on I noticed that from a Fedora box behind the Zscaler cloud I could no longer do a 'dnf update'. The Curl error (60) below is the fatal error, mentioning 'Peers Certificate issue is not recognized'.
 
-'''
+```
 Install   8 Packages
 Upgrade  85 Packages
 Remove    5 Packages
@@ -18,7 +18,7 @@ The downloaded packages were saved in cache until the next successful transactio
 You can remove cached packages by executing 'dnf clean packages'.
 Error: Error downloading packages:
   Curl error (60): Peer certificate cannot be authenticated with given CA certificates for https://mirrors.rpmfusion.org/metalink?repo=free-fedora-updates-released-25&arch=x86_64 [Peer's Certificate issuer is not recognized.]
-'''
+```
 
 So there's something I didn't know, dnf uses curl. There are curl arguments you can use to allow the use of unrecognized certificates, but that is not going help dnf. I looked at dnf arguments but came to conclusion that there should be a more permanent solution. 
 
