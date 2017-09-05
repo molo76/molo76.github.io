@@ -4,7 +4,7 @@ title: "Fedora 'pip install mysqlclient' failure & solution! "
 date: 2017-07-25
 ---
 
-When running [Flask](http://flask.pocoo.org/) and using [SQLAlchemy](https://www.sqlalchemy.org/) to provide a mechanism to update a MariaDB database through Python code I came across a problem with Fedora's implementation of MariaDB, the MySQL alternative that is packaged with Fedora. 
+When running [Flask](http://flask.pocoo.org/) and using [SQLAlchemy](https://www.sqlalchemy.org/) to provide a mechanism to update a MariaDB database through Python code I came across a problem with the Fedora 26 implementation of MariaDB, the MySQL alternative that is packaged with Fedora. 
 
 It was while using Flask-Migrate to update the database I came across the following error:
 
@@ -47,5 +47,6 @@ Then I looked at the error further, the error for `pip install mysqlclient` was 
 
 Once I had that installed, `pip install mysqlclient` worked a treat, and then `flask db migrate` worked as well! 
 
+As mentioned, this happened on Fedora26, I'm not sure if the same issue exists in earlier version of the Fed. 
 
 
