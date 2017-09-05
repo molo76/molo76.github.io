@@ -34,7 +34,7 @@ Enter an IP address & mask, example 10.100.23.1/23: 200.54.23.1/24
 >>> 
 ```
 
-So now we have the two parts of the network, in two seperate variable. Next up is splitting into octets, then doing some binary conversions to get the info we need. 
+So now we have the two parts of the network, in two seperate variables. Next up is splitting into octets, then doing some binary conversions to get the info we need. 
 
 ### Update - 05th September 2017
 After being slack over summer I added this mini project/script as a repo on github, and called it ['ip-snake-oil'](https://github.com/molo76/ip-snake-oil). I'll get a new blog post to cover the next steps on here soon.  
