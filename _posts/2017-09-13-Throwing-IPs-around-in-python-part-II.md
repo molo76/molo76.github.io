@@ -21,6 +21,7 @@ To do that I first split the IP into a list, containing 4 elements, each section
 >>> octets = ip.split('.')
 ```
 Resulting list:
+```
 >>> octets
 ['192', '168', '10', '97']
 ```
