@@ -9,7 +9,7 @@ Amazing that this is the first post in 5 years. I started this blog off original
 
 Coming back to the revival of this blog. 5 years ago I moved job (partly due to the boredom) and found myself swamped with really interesting work. I quickly learnt Terraform [Terraform](https://www.terraform.io), [Salt](https://docs.saltproject.io/en/getstarted/) and spent the next 4 years in [Azure](http://Azure.microsoft.com). I went from a job which was 100% Cisco engineer focused to being a Principle DevOps Engineer, embracing Infrastructure As Code, Kubernetes, Automation and a whole bunch of new tools and processes. In that time I was so busy this blog just got forgotten about. 
 
-Now I want my GitHub contributions to look better, so thought I'd revive this blog! ![]({{ site.url }}/assets/contributions.png)
+Now I want my GitHub contributions to look better, so thought I'd revive this blog! ![]({{ site.url }}/assets/ghcontributions.png)
 
 Not really....the recent contributions you can see in the contributions map above are due to a(nother) Python course I am currently doing, and the course has really motivated me to get going again. Not least because I'm doing alot of AWS Boto3 work right now too. 
 
